@@ -4,7 +4,7 @@ For decades now, surgical trainees have relied on information from textbooks and
 
 # Data
 
-The system was trained on PDFs provided by the authors of the Duke Manual of Vitreoretinal Surgery. Each PDF corresponds to a chapter of the textbook and describes case preparation, surgical technique, tips and tricks, and common complications for each case type. A total of 69 PDF documents from this textbook were used in RAG development. This information is protected by copyright, so I was not able to publish these PDFs along with this repository. I have included open source sample PDFs describing common conditions in vitreoretinal surgery to allow prospective users to test the system. 
+The system was trained on PDFs provided by the authors of the Duke Manual of Vitreoretinal Surgery. Each PDF corresponds to a chapter of the textbook and describes case preparation, surgical technique, tips and tricks, and common complications for each case type. A total of 69 PDF documents from this textbook were used in RAG development. This information is protected by copyright, so I was not able to publish these PDFs along with this repository. I have included open source sample PDFs describing common conditions in vitreoretinal surgery to allow prospective users to test the system. The test questions provided here were created based on these sample documents. 
 
 # Creation
 
