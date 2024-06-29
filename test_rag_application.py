@@ -1,10 +1,6 @@
 import pytest
 from scripts.query_RAG import get_embeddings, query_rag
 from langchain.vectorstores.chroma import Chroma
-from langchain.prompts import ChatPromptTemplate
-from langchain_community.llms.llamafile import Llamafile
-from langchain_community.embeddings.ollama import OllamaEmbeddings
-
 
 chroma_path = "chroma"
 
