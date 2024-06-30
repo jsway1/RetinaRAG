@@ -11,8 +11,8 @@ from langchain.vectorstores.chroma import Chroma
 from langchain_community.embeddings.ollama import OllamaEmbeddings
 
 # Defining the paths for the chroma database and location of the PDF files for RAG 
-chroma_path = "chroma"
-data_path = "/Users/jps93/Desktop/Retina1"
+chroma_path = "CHROMA_PATH"
+data_path = "DATA_PATH"
 
 # Loading the PDF documents 
 
