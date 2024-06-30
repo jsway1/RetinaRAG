@@ -6,7 +6,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.llamafile import Llamafile
 from langchain_community.embeddings.ollama import OllamaEmbeddings
 
-chroma_path = "chroma"
+chroma_path = "CHROMA_PATH"
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
