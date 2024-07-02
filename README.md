@@ -47,6 +47,10 @@ You can then activate the model by running:
 
 
 
+
+
+
+
 # Repository Folders and Contents 
 
 ## docs
@@ -63,11 +67,13 @@ Contains Jupyter notebooks used during the app development process
 
 ## scripts 
 
->> createdb.py
+createdb.py  - script that contains text chunk generation, text chunk embedding, and chroma database creation code 
 
-      
+query_RAG.py  - script that contains RAG query function 
 
 ## templates 
+
+RetinaLLM.html - html template for Flask/HTML user interface
 
 
 
