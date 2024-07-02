@@ -25,7 +25,9 @@ The system generates a response which is fed back to the user through the HTML/F
 
 Download the Mistral 7B Instruct llamafile from the Mozilla Ocho Repository: https://github.com/Mozilla-Ocho/llamafile
 
+
 <img width="826" alt="Screenshot 2024-07-02 at 2 55 34 PM" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/c7eb02b7-5054-41b2-927f-796d67b533e6">
+
 
 Once you have downloaded the Mistral 7B llamafile run the following command in your command line to grant permission for your computer to run the model (only need to do this once) 
 
@@ -34,8 +36,6 @@ chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
 You can then activate the model by running 
 
 ./mistral-7b-instruct-v0.2.Q4_0.llamafile
-
-
 
 ## Running the Application 
 
