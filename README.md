@@ -33,7 +33,7 @@ Once you have downloaded the Mistral 7B llamafile run the following command in y
 
 chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
 
-You can then activate the model by running 
+You can then activate the model by running: 
 
 ./mistral-7b-instruct-v0.2.Q4_0.llamafile
 
