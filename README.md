@@ -29,11 +29,7 @@ This system was developed with the Mistral-7B-Instruct model
 
 Once you have downloaded your llamafile of choice, follow the quickstart guidelines on the same webpage to get your local LLM up and running. 
 
-# Instructions
-
-
-
-# Comparison
+## Running the Application 
 
 
 
@@ -41,7 +37,9 @@ Once you have downloaded your llamafile of choice, follow the quickstart guideli
 
 
 
-A description of respository folders and contents is provided below. 
+
+
+# Repository Folders and Contents 
 
 # Data
 
