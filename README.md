@@ -4,7 +4,7 @@ For decades now, surgical trainees have relied on information from textbooks and
 
 Developing the system architecture involved sourcing chapter PDFs from the publisher, creating text chunks, embedding text chunks, and storing them in a Chroma database. User queries are entered through a simple HTML/Flask interface and embeddings are generated for these queries. The top 3 most similar text passages to the user query are extracted from the Chroma database using semantic search. These text passages are fed into a local llamafile language model (Mistral 7B) along with the user query and a prompt. The prompt used was as follows: 
 
-### LLM Prompt: 
+#### LLM Prompt: 
 
 Answer the question based only on the following context:
 
@@ -14,9 +14,9 @@ The system generates a response which is fed back to the user through the HTML/F
 
 ![image](https://github.com/jsway1/AIPI_561_LLM/assets/45215554/8b9c9a8e-d466-4158-8d68-fd1f19fc7972)
 
-### Link to Demo Video: 
+#### Link to Demo Video: 
 
-## Performance Evaluation
+### Performance Evaluation
 
 
 # Instructions for Setup, Running, and Testing Application 
