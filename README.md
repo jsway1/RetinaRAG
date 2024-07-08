@@ -39,7 +39,9 @@ You can then activate the model by running:
 
 ## Running the Application 
 
-Once you have activated your llamafile, run the following command in the terminal to activate the system. 
+Once you have activated your llamafile, make sure your system has all required packages (in requirements.txt file). 
+
+After confirming package installation run the following command in the terminal to activate the system. 
 
 python3 app.py 
 
