@@ -39,6 +39,13 @@ You can then activate the model by running:
 
 ## Running the Application 
 
+Once you have activated your llamafile, run the following command in the terminal to activate the system. 
+
+python3 app.py 
+
+The system will prompt you to open a webpage at localhost:5000 where you should see the RetinaLLM frontend. You can now ask questions to the RAG application 
+
+![image](https://github.com/jsway1/AIPI_561_LLM/assets/45215554/063f0775-3001-4965-ac73-43f8164f1fdf)
 
 
 
