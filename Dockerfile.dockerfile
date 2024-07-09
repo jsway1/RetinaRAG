@@ -1,8 +1,8 @@
 FROM python:3.10
 
-WORKDIR /retinallmdocker
+WORKDIR /app
 
-COPY . /retinallmdocker
+COPY . /app
 
 RUN pip install --no-cache-dir --trusted-host pypi.org --trusted-host pypi.python.org -r requirements.txt
 
