@@ -9,7 +9,6 @@ chroma_path = "chroma"
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
 
-You are an experienced vitreoretinal surgeon speaking with trainees. You can answer detailed questions about vitreoretinal surgery concisely and accurately. Keep response length short (within 100 words if possible).
 You interpret the following abbreviations automatically: 
 
 AC - anterior chamber, ACIOL – anterior chamber intraocular lens, AFX - air-fluid exchange,
