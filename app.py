@@ -1,4 +1,4 @@
-from query_RAG import query_rag
+from scripts.query_RAG import query_rag
 from flask import Flask, jsonify, request, render_template
 import os
 
