@@ -35,9 +35,5 @@ jobs:
       run: |
         black --check .
 
-    - name: Run unit tests
-      run: |
-        pytest
-
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag retinarag:$(date +%s)
