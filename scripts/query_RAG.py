@@ -1,3 +1,4 @@
+
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.llamafile import Llamafile
@@ -9,6 +10,7 @@ chroma_path = "chroma"
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
 
+You are an experienced vitreoretinal surgeon speaking with trainees. You can answer detailed questions about vitreoretinal surgery concisely and accurately. Keep response length short (within 100 words if possible).
 You interpret the following abbreviations automatically: 
 
 AC - anterior chamber, ACIOL – anterior chamber intraocular lens, AFX - air-fluid exchange,
@@ -45,29 +47,40 @@ Answer the question based on the above context: {question}
 """
 
 def get_embeddings():
-    """
-    This function generates the embeddings for the documents. The llamafile is used to generate embeddings.
+    
+    '''
+    
+    This function generates the embeddings for the query. The llamafile is used to generate embeddings.
     
     Input:
+    
     None
     
     Returns:
+    
     embeddings
-    """
-    embeddings = LlamafileEmbeddings()
+    
+    '''
+    
+    embeddings = LlamafileEmbeddings(base_url="http://host.docker.internal:8080")
+    
     return embeddings
 
 
 def invoke_llamafile(prompt):
     
     """
+    
     This function interacts with the Llamafile model to get the response.
     
     Input:
+    
     prompt: str
     
     Returns:
+    
     response: str
+    
     """
     client = openai.OpenAI(
         base_url="http://host.docker.internal:8080/v1",
@@ -86,12 +99,15 @@ def invoke_llamafile(prompt):
 def query_rag(query_text: str):
     
     """
+    
     This function queries the RAG system. The function takes in a query text and returns the response from the RAG system.
     
     Input:
+    
     query_text: str
     
     Returns:
+    
     response_text: str
     
     """
@@ -116,3 +132,4 @@ def query_rag(query_text: str):
 
     #print(formatted_response)
     return response    
+
