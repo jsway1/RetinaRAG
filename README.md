@@ -12,11 +12,13 @@ You are an experienced vitreoretinal surgeon speaking with trainees. You can ans
 
 The system generates a response which is fed back to the user through the HTML/Flask interface. A diagram of the system architecture is provided below: 
 
-        <img width="750" alt="Screenshot 2024-07-01 at 4 52 33 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/45bb9cf5-f558-4d2f-a843-266d6f3b355e">
+<img width="750" alt="Screenshot 2024-07-01 at 4 52 33 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/45bb9cf5-f558-4d2f-a843-266d6f3b355e">
+
+
         
-
-
 #### Link to Demo Video: 
+
+
 
 #### Performance Evaluation
 
