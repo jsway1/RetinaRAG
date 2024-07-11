@@ -14,14 +14,17 @@ You are an experienced vitreoretinal surgeon speaking with trainees. You can ans
 
 The system generates a response which is fed back to the user through the HTML/Flask interface. A diagram of the system architecture is provided below: 
 
-<img align='center' width="750" alt="Screenshot 2024-07-01 at 4 52 33 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/45bb9cf5-f558-4d2f-a843-266d6f3b355e">
+<p align="center">
+<img width="750" alt="Screenshot 2024-07-01 at 4 52 33 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/45bb9cf5-f558-4d2f-a843-266d6f3b355e">
+</p>
 
 #### Performance Evaluation
 
 The performance of the Mistral 7B Instruct model was evaluated both with and without RAG augmentation. Responses were compared to an ideal response (sourced from the text) via cosine similarity. Results are provided in the plot below. The RAG system outperformed the LLM-only approach for all questions, but to varying degrees. The LLM-only approach struggled to provide concise answers for more complex questions without RAG augmentation. The code for this comparison is provided in the "notebooks" folder. The questions used are provided in the "model_eval_questions.txt" text file. 
 
-
-<img align='center' width="600" alt="Screenshot 2024-07-10 at 3 50 45 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/4e3d79f4-1b45-4af2-93e9-2d77205a5a6d">
+<p align="center">
+<img width="600" alt="Screenshot 2024-07-10 at 3 50 45 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/4e3d79f4-1b45-4af2-93e9-2d77205a5a6d">
+</p>
 
 
 #### Link to Demo Video: 
@@ -36,8 +39,9 @@ The performance of the Mistral 7B Instruct model was evaluated both with and wit
 Download the Mistral 7B Instruct llamafile from the Mozilla Ocho Repository: https://github.com/Mozilla-Ocho/llamafile
 
 
-
-<img align='center' width="826" alt="Screenshot 2024-07-02 at 2 55 34 PM" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/c7eb02b7-5054-41b2-927f-796d67b533e6">
+<p align="center">
+<img width="826" alt="Screenshot 2024-07-02 at 2 55 34 PM" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/c7eb02b7-5054-41b2-927f-796d67b533e6">
+</p>
 
 
 
@@ -64,7 +68,9 @@ python3 app.py
 
 The system will prompt you to open a webpage at localhost:5050 where you should see the RetinaLLM frontend. You can now ask questions to the RAG application 
 
-<img align='center' src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/063f0775-3001-4965-ac73-43f8164f1fdf">
+<p align="center">
+<img src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/063f0775-3001-4965-ac73-43f8164f1fdf">
+</p>
 
 
 
