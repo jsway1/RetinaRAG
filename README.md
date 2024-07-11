@@ -66,7 +66,7 @@ docker build -t retinarag -f Dockerfile.dockerfile
 After the docker image is created, run the following command: 
 
 ```
-#docker run -p 5050:5050 retinarag
+docker run -p 5050:5050 retinarag
 ```  
 
 The system will prompt you to open a webpage at localhost:5050 where you should see the RetinaLLM frontend. You can now ask questions to the RAG application 
@@ -113,6 +113,10 @@ RetinaLLM.html - HTML template for Flask frontend
 test_RAG_app.py - script that tests app database access, embedding creation, LLM query, and response accuracy 
 
 RetinaLLM.html - html template for Flask/HTML user interface
+
+## model_eval_questions.txt
+
+Contains 10 test questions and ideal answers used to evaluate performance of Mistral 7B Instruct model both with and without RAG 
 
 
 
