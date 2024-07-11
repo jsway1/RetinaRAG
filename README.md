@@ -43,11 +43,14 @@ Download the Mistral 7B Instruct llamafile from the Mozilla Ocho Repository: htt
 
 Once you have downloaded the Mistral 7B llamafile run the following command in your command line to grant permission for your computer to run the model (only need to do this once) 
 
+'''
 chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
-
+'''
 You can then activate the model by running: 
 
+'''
 ./mistral-7b-instruct-v0.2.Q4_0.llamafile
+'''
 
 ## Running the Application 
 
@@ -55,7 +58,9 @@ Once you have activated your llamafile, make sure your system has all required p
 
 After confirming package installation run the following command in the terminal to activate the system. 
 
+'''
 python3 app.py 
+'''
 
 The system will prompt you to open a webpage at localhost:5050 where you should see the RetinaLLM frontend. You can now ask questions to the RAG application 
 
