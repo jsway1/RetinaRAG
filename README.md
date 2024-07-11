@@ -1,6 +1,6 @@
 # AIPI 561 Project: Vitreoretinal Surgery LLM
 
-<img width="750" src="https://github.com/OWNER/REPOSITORY/actions/workflows/docker-image.yml/badge.svg">
+[![Docker Image CI](https://github.com/jsway1/RetinaRAG/actions/workflows/docker-image.yml/badge.svg)](https://github.com/jsway1/RetinaRAG/actions/workflows/docker-image.yml)
 
 For decades now, surgical trainees have relied on information from textbooks and "real-time" instruction from attending surgeons in the OR during residency. The authors of the The Duke Manuals of Ophthalmic Surgery aimed to to improve upon this by creating a textbook series that contains traditional surgical information, as well tips/tricks from attending surgeons for each type of procedure. The goal of this project was to create a local llamafile based RAG system with access to the Duke Manual of Vireoretinal Surgery. This will allow ophthalmology residents and vitreoretinal surgery fellows to interact with the information in real time and help them prepare for OR cases and their board exams. If trainees find this system useful, we will expand this effort to cover other medical specialties/subspecialties. 
 
