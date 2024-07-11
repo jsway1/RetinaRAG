@@ -69,15 +69,8 @@ python3 app.py
 The system will prompt you to open a webpage at localhost:5050 where you should see the RetinaLLM frontend. You can now ask questions to the RAG application 
 
 <p align="center">
-<img src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/063f0775-3001-4965-ac73-43f8164f1fdf">
+<img width="750" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/063f0775-3001-4965-ac73-43f8164f1fdf">
 </p>
-
-
-
-
-
-
-
 
 
 
