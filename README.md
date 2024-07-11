@@ -58,13 +58,16 @@ You can then activate the model by running:
 
 ## Running the Application 
 
-Once you have activated your llamafile, make sure your system has all required packages (in requirements.txt file). 
-
-After confirming package installation run the following command in the terminal to activate the system. 
+After you have started your llamafile, run the following command to build the Docker image
 
 ```
-python3 app.py 
+docker build -t retinarag -f Dockerfile.dockerfile
 ```
+After the docker image is created, run the following command: 
+
+```
+#docker run -p 5050:5050 retinarag
+```  
 
 The system will prompt you to open a webpage at localhost:5050 where you should see the RetinaLLM frontend. You can now ask questions to the RAG application 
 
@@ -73,10 +76,15 @@ The system will prompt you to open a webpage at localhost:5050 where you should 
 </p>
 
 
-
-
-
 # Repository Folders and Contents 
+
+## app.py 
+
+Main file that runs all components of the application 
+
+## Dockerfile.dockerfile 
+
+Dockerfile that creates docker image of application and runs app.py 
 
 ## docs
 
