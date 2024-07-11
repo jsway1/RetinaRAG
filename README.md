@@ -36,35 +36,47 @@ The Mistral 7B Instruct model was also compared to the TinyLlama-1.1B	model. The
 
 Download the Mistral 7B Instruct llamafile from the Mozilla Ocho Repository: https://github.com/Mozilla-Ocho/llamafile
 
-
 <p align="center">
 <img width="826" alt="Screenshot 2024-07-02 at 2 55 34 PM" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/c7eb02b7-5054-41b2-927f-796d67b533e6">
 </p>
-
-
 
 Once you have downloaded the Mistral 7B llamafile run the following command in your command line to grant permission for your computer to run the model (only need to do this once) 
 
 ```
 chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
 ```
-You can then activate the model by running: 
+
+You must also clone this repository to your local machine. Navigate to the path you'd like to store the files at then run the following command: 
+   
+```git clone https://github.com/jsway1/RetinaRAG.git```
+
+Once you have cloned the repository create a virtual environment by running: 
+
+```
+python3 -m venv venv
+```
+
+Activate the virtual environment by running 
+
+```
+source myenv/bin/activate
+```
+
+Install dependencies by running 
+
+```
+pip3 install -r requirements.txt
+```
+
+## Running the Application 
+
+Activate the model by running (must be done every time you start the application). 
 
 ```
 ./mistral-7b-instruct-v0.2.Q4_0.llamafile
 ```
 
-## Running the Application 
-
-After you have started your llamafile, clone this repository to your local machine 
-
-```
-
-```
-
-
-
-
+Build the docker image by running: 
 
 ```
 docker build -t retinarag -f Dockerfile.dockerfile
@@ -81,6 +93,13 @@ The system will prompt you to open a webpage at localhost:5050 where you should 
 <img width="750" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/063f0775-3001-4965-ac73-43f8164f1fdf">
 </p>
 
+## Testing the Application 
+
+To test database access, embedding generation, LLM querying, and accuracy of responses run the following command: 
+
+```
+python3 pytest
+```
 
 # Repository Folders and Contents 
 
