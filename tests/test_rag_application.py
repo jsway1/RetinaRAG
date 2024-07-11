@@ -1,5 +1,5 @@
 import pytest
-from scripts.query_RAG import get_embeddings, query_rag
+from scripts.query_RAG import get_embeddings, query_rag, invoke_llamafile
 from langchain.vectorstores.chroma import Chroma
 
 chroma_path = "chroma"
