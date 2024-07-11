@@ -56,7 +56,15 @@ You can then activate the model by running:
 
 ## Running the Application 
 
-After you have started your llamafile, run the following command to build the Docker image
+After you have started your llamafile, clone this repository to your local machine 
+
+```
+
+```
+
+
+
+
 
 ```
 docker build -t retinarag -f Dockerfile.dockerfile
