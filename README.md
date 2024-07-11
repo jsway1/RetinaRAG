@@ -14,18 +14,17 @@ The system generates a response which is fed back to the user through the HTML/F
 
 <img width="750" alt="Screenshot 2024-07-01 at 4 52 33 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/45bb9cf5-f558-4d2f-a843-266d6f3b355e">
 
-
-        
-#### Link to Demo Video: 
-
-
-
 #### Performance Evaluation
 
-The performance of the Mistral 7B Instruct model was evaluated both with and without RAG augmentation. Responses were compared to an ideal response (sourced from the text) via cosine similarity. Results are provided in the plot below. The RAG system outperformed the LLM-only approach for all questions, but to varying degrees. The LLM struggled to provide concise answers for more complex questions without RAG augmentation. The code for this comparison is provided in the "notebooks" folder. The questions used are provided in the "model_eval_questions.txt" text file. 
+The performance of the Mistral 7B Instruct model was evaluated both with and without RAG augmentation. Responses were compared to an ideal response (sourced from the text) via cosine similarity. Results are provided in the plot below. The RAG system outperformed the LLM-only approach for all questions, but to varying degrees. The LLM-only approach struggled to provide concise answers for more complex questions without RAG augmentation. The code for this comparison is provided in the "notebooks" folder. The questions used are provided in the "model_eval_questions.txt" text file. 
 
 
 <img width="600" alt="Screenshot 2024-07-10 at 3 50 45 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/4e3d79f4-1b45-4af2-93e9-2d77205a5a6d">
+
+
+#### Link to Demo Video: 
+
+
 
 
 # Instructions for Setup, Running, and Testing Application 
