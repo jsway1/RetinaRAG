@@ -40,13 +40,13 @@ Download the Mistral 7B Instruct llamafile from the Mozilla Ocho Repository: htt
 <img width="826" alt="Screenshot 2024-07-02 at 2 55 34 PM" src="https://github.com/jsway1/AIPI_561_LLM/assets/45215554/c7eb02b7-5054-41b2-927f-796d67b533e6">
 </p>
 
-Once you have downloaded the Mistral 7B llamafile run the following command in your command line to grant permission for your computer to run the model (only need to do this once) 
+Once you have downloaded the Mistral 7B llamafile run the following command in your terminal to grant permission for your computer to run the model (only need to do this once) 
 
 ```
 chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
 ```
 
-You must also clone this repository to your local machine. Navigate to the path you'd like to store the files at then run the following command: 
+You must also clone this repository to your local machine. Navigate to the path you'd like to store the files then run the following command: 
    
 ```git clone https://github.com/jsway1/RetinaRAG.git```
 
@@ -59,7 +59,7 @@ python3 -m venv venv
 Activate the virtual environment by running 
 
 ```
-source myenv/bin/activate
+source venv/bin/activate
 ```
 
 Install dependencies by running 
@@ -70,7 +70,7 @@ pip3 install -r requirements.txt
 
 ## Running the Application 
 
-Activate the model by running (must be done every time you start the application). 
+Activate the model by running the following command (must be done every time you start the application): 
 
 ```
 ./mistral-7b-instruct-v0.2.Q4_0.llamafile
@@ -81,7 +81,7 @@ Build the docker image by running:
 ```
 docker build -t retinarag -f Dockerfile.dockerfile
 ```
-After the docker image is created, run the following command: 
+After the docker image is created, run the following:  
 
 ```
 docker run -p 5050:5050 retinarag
@@ -98,7 +98,7 @@ The system will prompt you to open a webpage at localhost:5050 where you should 
 To test database access, embedding generation, LLM querying, and accuracy of responses run the following command: 
 
 ```
-python3 pytest
+pytest
 ```
 
 # Repository Folders and Contents 
