@@ -1,4 +1,3 @@
-
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.llamafile import Llamafile
@@ -46,72 +45,59 @@ Answer the question based on the above context: {question}
 
 """
 
+
 def get_embeddings():
-    
-    '''
-    
-    This function generates the embeddings for the query. The llamafile is used to generate embeddings.
-    
+    """
+    This function generates the embeddings for the documents. The llamafile is used to generate embeddings.
+
     Input:
-    
     None
-    
+
     Returns:
-    
     embeddings
-    
-    '''
-    
+    """
     embeddings = LlamafileEmbeddings(base_url="http://host.docker.internal:8080")
-    
     return embeddings
 
 
 def invoke_llamafile(prompt):
-    
-    '''
-    
+    """
     This function interacts with the Llamafile model to get the response.
-    
+
     Input:
-    
     prompt: str
-    
+
     Returns:
-    
     response: str
-    
-    '''
+    """
     client = openai.OpenAI(
-        base_url="http://host.docker.internal:8080/v1",
-        api_key="sk-no-key-required"
+        base_url="http://host.docker.internal:8080/v1", api_key="sk-no-key-required"
     )
     completion = client.chat.completions.create(
         model="LLaMA_CPP",
         messages=[
-            {"role": "system", "content": "You are an experienced vitreoretinal surgeon speaking with trainees. You can answer detailed questions about vitreoretinal surgery concisely and accurately. Keep response length short (within 100 words if possible)"},
-            {"role": "user", "content": prompt}
-        ]
+            {
+                "role": "system",
+                "content": "You are an experienced vitreoretinal surgeon speaking with trainees. You can answer detailed questions about vitreoretinal surgery concisely and accurately. Keep response length short (within 100 words if possible)",
+            },
+            {"role": "user", "content": prompt},
+        ],
     )
-    
+
     return completion.choices[0].message.content
 
+
 def query_rag(query_text: str):
-    
-    '''
-    
+    """
     This function queries the RAG system. The function takes in a query text and returns the response from the RAG system.
-    
+
     Input:
-    
     query_text: str
-    
+
     Returns:
-    
     response_text: str
-    
-    '''
-    
+
+    """
     # Get the embedding function and search the database
     embedding_function = get_embeddings()
     db = Chroma(persist_directory=chroma_path, embedding_function=embedding_function)
@@ -128,9 +114,8 @@ def query_rag(query_text: str):
     response = invoke_llamafile(prompt)
 
     # Getting chunk information so we can cite the sources
-    #sources = [doc.metadata.get("id", None) for doc, _score in results]
-    #formatted_response = f"Response: {response}\nSources: {sources}"
+    # sources = [doc.metadata.get("id", None) for doc, _score in results]
+    # formatted_response = f"Response: {response}\nSources: {sources}"
 
-    #print(formatted_response)
-    return response    
-
+    # print(formatted_response)
+    return response
