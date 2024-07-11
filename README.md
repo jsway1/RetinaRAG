@@ -98,6 +98,8 @@ query_RAG.py  - script that contains RAG query function
 
 ## templates 
 
+RetinaLLM.html - HTML template for Flask frontend 
+
 ## tests
 
 test_RAG_app.py - script that tests app database access, embedding creation, LLM query, and response accuracy 
