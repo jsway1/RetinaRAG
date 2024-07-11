@@ -36,4 +36,10 @@ jobs:
         black --check .
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile.dockerfile --tag retinarag:$(date +%s)
+      run: docker build . --file Dockerfile.dockerfile --tag retinarag:latest
+
+    - name: Log in to Docker Hub
+      run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+
+    - name: Push Docker image to Docker Hub
+      run: docker push retinarag:latest
