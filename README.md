@@ -26,7 +26,7 @@ The performance of the Mistral 7B Instruct model was evaluated both with and wit
 <img width="600" alt="Screenshot 2024-07-10 at 3 50 45 PM" src="https://github.com/jsway1/RetinaRAG/assets/45215554/4e3d79f4-1b45-4af2-93e9-2d77205a5a6d">
 </p>
 
-The Mistral 7B Instruct model was also compared to the TinyLlama-1.1B	model. The TinyLlama model had difficulty producing output on occasion (would return random phrases) so the Mistral 7B Instruct model was selected for further development. 
+The Mistral 7B Instruct model was also compared to the TinyLlama-1.1B	model. The TinyLlama model had difficulty producing output on occasion and would return responses asking the user to find other sources for the requested information. As such, the Mistral 7B Instruct model was selected for further development tasks. 
 
 #### Link to Demo Video: 
 
