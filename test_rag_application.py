@@ -64,5 +64,14 @@ def test_database_access():
     assert len(results) > 0, "Database did not return any results"
     print("Database access test passed successfully")
 
+def test_AMD():
+    query_text = "What are the most significant risk factors for age related macular degeneration?"
+    response = query_rag(query_text)
+    
+    assert response is not None, "Response should not be None"
+    assert "Age" in response, "Response should mention 'Age'"
+    
+    print("AMD test passed successfully")
+
 if __name__ == '__main__':
     pytest.main()
