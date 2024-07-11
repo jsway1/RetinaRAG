@@ -135,9 +135,7 @@ RetinaLLM.html - HTML template for Flask frontend
 
 ## tests
 
-test_RAG_app.py - script that tests app database access, embedding creation, LLM query, and response accuracy 
-
-RetinaLLM.html - html template for Flask/HTML user interface
+test_RAG_application.py - script that tests app database access, embedding creation, LLM query, and response accuracy 
 
 ## model_eval_questions.txt
 
