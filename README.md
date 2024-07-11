@@ -101,6 +101,8 @@ Test database access, embedding generation, LLM querying, and accuracy of respon
 pytest
 ```
 
+You should receive a green message indicating that 4/4 tests passed 
+
 # Repository Folders and Contents 
 
 ## app.py 
