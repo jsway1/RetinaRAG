@@ -50,24 +50,6 @@ You must also clone this repository to your local machine. Navigate to the path 
    
 ```git clone https://github.com/jsway1/RetinaRAG.git```
 
-Once you have cloned the repository create a virtual environment by running: 
-
-```
-python3 -m venv venv
-```
-
-Activate the virtual environment by running 
-
-```
-source venv/bin/activate
-```
-
-Install dependencies by running 
-
-```
-pip3 install -r requirements.txt
-```
-
 ## Running the Application 
 
 Activate the model by running the following command (must be done every time you start the application): 
@@ -95,7 +77,25 @@ The system will prompt you to open a webpage at localhost:5050 where you should 
 
 ## Testing the Application 
 
-To test database access, embedding generation, LLM querying, and accuracy of responses run the following command: 
+Create a virtual environment by running: 
+
+```
+python3 -m venv venv
+```
+
+Activate the virtual environment by running 
+
+```
+source venv/bin/activate
+```
+
+Install dependencies by running 
+
+```
+pip3 install -r requirements.txt
+```
+
+Test database access, embedding generation, LLM querying, and accuracy of responses by running the following command: 
 
 ```
 pytest
