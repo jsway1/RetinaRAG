@@ -42,7 +42,7 @@ VEGF - vascular endothelial growth factor, VH – vitreous hemorrhage, VMT - vit
 Answer the question based on the above context: {question}
 
 """
-'''
+
 def test_get_embeddings():
     embeddings = get_embeddings()
     assert embeddings is not None, "Embeddings should not be None"
@@ -53,7 +53,7 @@ def test_query_rag():
     response = query_rag(query_text)
     assert response is not None, "Response should not be None"
     print("RAG query response generated successfully")
-'''
+
 def test_database_access():
     query_text = "Test database access"
     embedding_function = get_embeddings()
@@ -63,7 +63,7 @@ def test_database_access():
     results = db.similarity_search_with_score(query_text, k=3)
     assert len(results) > 0, "Database did not return any results"
     print("Database access test passed successfully")
-'''
+
 def test_AMD():
     query_text = "What are the most significant risk factors for age related macular degeneration?"
     response = query_rag(query_text)
@@ -75,4 +75,4 @@ def test_AMD():
 
 if __name__ == '__main__':
     pytest.main()
-'''
+
