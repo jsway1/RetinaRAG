@@ -1,4 +1,4 @@
-# AIPI 561 Project: Vitreoretinal Surgery LLM
+# Vitreoretinal Surgery LLM
 
 [![Docker Image CI](https://github.com/jsway1/RetinaRAG/actions/workflows/docker-image.yml/badge.svg)](https://github.com/jsway1/RetinaRAG/actions/workflows/docker-image.yml)
 
