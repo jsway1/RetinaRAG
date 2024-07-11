@@ -1,6 +1,5 @@
-from scripts.query_RAG import query_rag
-from flask import Flask, jsonify, request, render_template
-import os
+from query_RAG_docker import query_rag
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
         
