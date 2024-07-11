@@ -69,7 +69,7 @@ def get_embeddings():
 
 def invoke_llamafile(prompt):
     
-    """
+    '''
     
     This function interacts with the Llamafile model to get the response.
     
@@ -81,7 +81,7 @@ def invoke_llamafile(prompt):
     
     response: str
     
-    """
+    '''
     client = openai.OpenAI(
         base_url="http://host.docker.internal:8080/v1",
         api_key="sk-no-key-required"
@@ -98,7 +98,7 @@ def invoke_llamafile(prompt):
 
 def query_rag(query_text: str):
     
-    """
+    '''
     
     This function queries the RAG system. The function takes in a query text and returns the response from the RAG system.
     
@@ -110,7 +110,8 @@ def query_rag(query_text: str):
     
     response_text: str
     
-    """
+    '''
+    
     # Get the embedding function and search the database
     embedding_function = get_embeddings()
     db = Chroma(persist_directory=chroma_path, embedding_function=embedding_function)
