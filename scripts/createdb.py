@@ -73,7 +73,7 @@ chunks = chunking(docs)
 
 def get_embeddings():
     """
-    This function is used to generate the embeddings for the documents. Llamafile embeddings are used. 
+    This function is used to generate the embeddings for the documents. Llamafile embeddings are used.
 
     Input:
 
