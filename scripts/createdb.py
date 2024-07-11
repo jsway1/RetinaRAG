@@ -8,7 +8,7 @@ from langchain.document_loaders.pdf import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from langchain.vectorstores.chroma import Chroma
-from langchain_community.embeddings.ollama import OllamaEmbeddings
+from langchain_community.embeddings.ollama import LlamafileEmbeddings
 
 # Defining the paths for the chroma database and location of the PDF files for RAG 
 chroma_path = "CHROMA_PATH"
@@ -69,8 +69,10 @@ chunks = chunking(docs)
 # creating the function to generate the embeddings 
 
 def get_embeddings():
+    
     '''
-    This function is used to generate the embeddings for the documents. The embedding model used is nomic-embed-text from the langchain community.  
+    
+    This function generates the embeddings for the documents. The llamafile is used to generate embeddings.
     
     Input:
     
@@ -82,7 +84,7 @@ def get_embeddings():
     
     '''
     
-    embeddings = OllamaEmbeddings(model = "nomic-embed-text")
+    embeddings = LlamafileEmbeddings(base_url="http://host.docker.internal:8080")
     
     return embeddings
 
