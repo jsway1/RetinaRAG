@@ -48,7 +48,9 @@ chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
 
 You must also clone this repository to your local machine. Navigate to the path you'd like to store the files then run the following command: 
    
-```git clone https://github.com/jsway1/RetinaRAG.git```
+```
+git clone https://github.com/jsway1/RetinaRAG.git
+```
 
 ## Running the Application 
 
