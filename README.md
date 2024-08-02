@@ -60,6 +60,18 @@ Activate the model by running the following command (must be done every time you
 ./mistral-7b-instruct-v0.2.Q4_0.llamafile
 ```
 
+Create a virtual environment by running: 
+
+```
+python3 -m venv env
+```
+
+Activate the virtual environment by running: 
+
+```
+source venv/bin/activate
+```
+
 Build the docker image by running: 
 
 ```
