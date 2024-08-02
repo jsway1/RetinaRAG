@@ -38,13 +38,11 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.dockerfile --tag retinarag:latest
 
-# Not working currently 
+    - name: Log in to GitHub Packages
+      run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
-   # - name: Log in to Docker Hub
-     # uses: docker/login-action@v2
-     # with:
-      #  username: ${{ secrets.DOCKER_HUB_USERNAME }}
-       # password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+    - name: Tag the Docker image
+      run: docker tag retinarag:latest ghcr.io/${{ github.repository_owner }}/retinarag:latest
 
-    #- name: Push Docker image to Docker Hub
-     # run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/retinarag:latest
+    - name: Push the Docker image
+      run: docker push ghcr.io/${{ github.repository_owner }}/retinarag:latest
