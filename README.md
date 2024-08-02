@@ -63,7 +63,7 @@ Activate the model by running the following command (must be done every time you
 Build the docker image by running: 
 
 ```
-docker build -t retinarag -f Dockerfile.dockerfile
+docker build -t retinarag -f Dockerfile.dockerfile .
 ```
 After the docker image is created, run the following:  
 
