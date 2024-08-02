@@ -63,7 +63,7 @@ Activate the model by running the following command (must be done every time you
 Create a virtual environment by running: 
 
 ```
-python3 -m venv env
+python3 -m venv venv
 ```
 
 Activate the virtual environment by running: 
