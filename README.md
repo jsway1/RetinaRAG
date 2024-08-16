@@ -28,8 +28,6 @@ The performance of the Mistral 7B Instruct model was evaluated both with and wit
 
 The Mistral 7B Instruct model was also compared to the TinyLlama-1.1B	model. The TinyLlama model had difficulty producing output on occasion and would return responses asking the user to find other sources for the requested information. As such, the Mistral 7B Instruct model was selected for further development tasks. 
 
-#### Link to Demo Video: https://warpwire.duke.edu/w/O2QIAA/
-
 # Instructions for Setup, Running, and Testing Application 
 
 ## Setup
